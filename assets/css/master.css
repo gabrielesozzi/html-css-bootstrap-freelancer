@@ -62,8 +62,6 @@ body {
   border-radius: 2px;
 }
 
-
-
 .divider_portfolio .hr {
   display: inline-block;
   width: 10%;
@@ -99,6 +97,26 @@ body {
 
 .bg-green {
   background-color: #1ABC9C;
+}
+
+.about {
+  text-align: center;
+}
+
+.about h1 {
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+.about p {
+  color: #FFF;
+}
+
+.download {
+  background-image: none;
+  background-color: transparent;
+  color: #FFF;
+  padding: 15px 30px;
 }
 
 @media all and (min-width:768px) {
