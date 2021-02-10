@@ -9,6 +9,10 @@ body {
     /* border: 1px solid transparent; */
 }
 
+.bgallo {
+  background-color: yellow;
+}
+
 .navbar-bluedark {
   background-color: #2C3E50;
   background-image: none;
@@ -17,9 +21,17 @@ body {
   border-radius: 0;
 }
 
+.navbar-brand span {
+  color: #FFF;
+}
+
+.navbar-right li a span{
+  color: #FFF;
+}
+
 .jumbo {
   text-align: center;
-  padding: 80px;
+  padding: 10% 0;
 }
 
 .jumbo h1,
@@ -29,7 +41,11 @@ body {
 }
 
 .jumbo h1 {
-  font-size: 44px;
+  font-size: 5.5vw;
+}
+
+.jumbo p {
+  font-size: 1.5vw;
 }
 
 .divider #star {
@@ -46,8 +62,39 @@ body {
   border-radius: 2px;
 }
 
+
+
+.divider_portfolio .hr {
+  display: inline-block;
+  width: 10%;
+  border-bottom: 4px solid #000;
+  border-radius: 2px;
+}
+
+.divider_portfolio #star {
+  display: inline-block;
+  vertical-align: middle;
+  color: #000;
+  font-size: 25px;
+}
+
+.portfolio {
+  text-align: center;
+}
+
+.portfolio h2 {
+  text-transform: uppercase;
+}
+
+[class^="col-xs"] > img {
+  width: 50vw;
+  height: auto;
+  padding-bottom: 20px;
+  border-radius: 10px;
+}
+
 #avatar {
-  width: 15em;
+  width: 18vw;
 }
 
 .bg-green {
@@ -70,6 +117,13 @@ body {
 
   .navbar-right li a span:hover {
     color: #1ABC9C;
+  }
+
+  [class^="col-xs"] > img {
+    width: 100%;
+    /* height: auto;
+    padding-bottom: 20px;
+    border-radius: 10px; */
   }
 
 }
