@@ -1,0 +1,22 @@
+@media all and (min-width:768px) {
+
+  .navbar-brand span {
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #FFF;
+  }
+
+  .navbar-right li a span{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #FFF;
+  }
+
+  .navbar-right li a span:hover {
+    color: #1ABC9C;
+  }
+
+  header {
+    background-color: red;
+  }
+}
