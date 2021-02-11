@@ -9,10 +9,6 @@ body {
     /* border: 1px solid transparent; */
 }
 
-.bgallo {
-  background-color: yellow;
-}
-
 .navbar-bluedark {
   background-color: #2C3E50;
   background-image: none;
@@ -48,6 +44,11 @@ body {
   font-size: 1.5vw;
 }
 
+
+.divider {
+  margin-bottom: 50px;
+}
+
 .divider #star {
   display: inline-block;
   vertical-align: middle;
@@ -65,30 +66,40 @@ body {
 .divider_portfolio .hr {
   display: inline-block;
   width: 10%;
-  border-bottom: 4px solid #000;
+  border-bottom: 4px solid #2C3E50;
   border-radius: 2px;
 }
 
 .divider_portfolio #star {
   display: inline-block;
   vertical-align: middle;
-  color: #000;
+  color: #2C3E50;
   font-size: 25px;
 }
 
 .portfolio {
   text-align: center;
+  padding: 40px 0;
 }
 
 .portfolio h2 {
   text-transform: uppercase;
+  color: #2C3E50;
 }
 
 [class^="col-xs"] > img {
   width: 50vw;
   height: auto;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+  margin-top: 40px;
   border-radius: 10px;
+}
+
+ img:hover {
+  background-color: #1ABC9C;
+  opacity: 0.9;
+  object-fit: cover;
+  cursor: pointer;
 }
 
 #avatar {
@@ -101,15 +112,19 @@ body {
 
 .about {
   text-align: center;
+  padding: 50px 0;
 }
 
 .about h1 {
   text-transform: uppercase;
   color: #FFF;
+  font-size: 50px;
 }
 
 .about p {
   color: #FFF;
+  font-size: 18px;
+  padding: 0 10px;
 }
 
 .download {
@@ -117,6 +132,55 @@ body {
   background-color: transparent;
   color: #FFF;
   padding: 15px 30px;
+}
+
+.contact-me {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.contact-me h1 {
+  text-transform: uppercase;
+}
+
+.contact-me h2 {
+  text-align: left;
+  padding-left: 60px;
+}
+
+.contact-me hr {
+  width: 90%;
+  background-color: black;
+  height: 1px;
+
+}
+
+.info {
+  background-color: #3A546D;
+  text-align: center;
+  color: #FFF;
+  padding: 40px 0;
+}
+
+.info h3 {
+ text-transform: uppercase;
+}
+
+.info .container .row span i {
+  border: 1px solid #FFF;
+  padding: 10px 13px;
+  border-radius: 100%;
+}
+
+.info .container .row span  {
+  padding: 5px 15px;
+}
+
+.copy {
+  background-color: #2C3E50;
+  color: #FFF;
+  text-align: center;
+  padding: 30px 0;
 }
 
 @media all and (min-width:768px) {
@@ -135,6 +199,7 @@ body {
 
   .navbar-right li a span:hover {
     color: #1ABC9C;
+    cursor: pointer;
   }
 
   [class^="col-xs"] > img {
