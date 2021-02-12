@@ -5,8 +5,6 @@ body {
 .navbar {
     position: relative;
     min-height: 50px;
-    /* margin-bottom: 20px; */
-    /* border: 1px solid transparent; */
 }
 
 .navbar-bluedark {
@@ -37,11 +35,11 @@ body {
 }
 
 .jumbo h1 {
-  font-size: 5.5vw;
+  font-size: 50px;
 }
 
 .jumbo p {
-  font-size: 1.5vw;
+  font-size: 18px;
 }
 
 
@@ -60,6 +58,13 @@ body {
   font-size: 25px;
 }
 
+.divider_dark #star {
+  display: inline-block;
+  vertical-align: middle;
+  color: #2C3E50;
+  font-size: 25px;
+}
+
 .divider .hr {
   display: inline-block;
   width: 10%;
@@ -74,13 +79,6 @@ body {
   border-radius: 2px;
 }
 
-.divider_dark #star {
-  display: inline-block;
-  vertical-align: middle;
-  color: #2C3E50;
-  font-size: 25px;
-}
-
 .portfolio {
   text-align: center;
   padding: 40px 0;
@@ -91,27 +89,72 @@ body {
   color: #2C3E50;
 }
 
-[class^="col-xs"] > img {
-  width: 50vw;
-  height: auto;
-  margin-bottom: 20px;
-  margin-top: 40px;
-  border-radius: 10px;
-}
-
- img:hover {
-  background-color: #1ABC9C;
-  opacity: 0.9;
-  object-fit: cover;
-  cursor: pointer;
-}
-
 #avatar {
   width: 18vw;
 }
 
 .bg-green {
   background-color: #1ABC9C;
+}
+
+.item-cabin {
+  background-image: url("../img/cabin.png");
+}
+
+.item-cake {
+  background-image: url("../img/cake.png");
+}
+
+.item-circus {
+  background-image: url("../img/circus.png");
+}
+
+.item-game {
+  background-image: url("../img/game.png");
+}
+
+.item-safe {
+  background-image: url("../img/safe.png");
+}
+
+.item-submarine {
+  background-image: url("../img/submarine.png");
+}
+
+.item-img {
+  position: relative;
+  border-radius: 10px;
+  height: 230px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.layer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: #1ABC9C;
+  opacity: 0;
+  width: 100%;
+  border-radius: 10px;
+}
+.layer h4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size:50px;
+  color: #FFF;
+}
+
+.layer:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .about {
@@ -131,15 +174,24 @@ body {
   padding: 0 10px;
 }
 
-.download {
+.btn-download {
   background-image: none;
   background-color: transparent;
   color: #FFF;
   padding: 15px 30px;
+  text-shadow: none;
+}
+
+.btn-send {
+  background-image: none;
+  background-color: #1ABC9C;
+  color: #FFF;
+  text-shadow: none;
+  border-color: none;
+  padding: 8px 14px;
 }
 
 .contact-me {
-  /* text-align: center; */
   padding: 50px 0;
 }
 
@@ -153,17 +205,6 @@ body {
   font-size: 30px;
 }
 
-/* .contact-me h2 {
-  text-align: left;
-  padding-left: 60px;
-}
-
-.contact-me hr {
-  width: 90%;
-  background-color: black;
-  height: 1px;
-
-} */
 
 .info {
   background-color: #3A546D;
@@ -176,14 +217,29 @@ body {
  text-transform: uppercase;
 }
 
+.info a {
+  color: #F8F9FA;
+}
+
+.info a:hover {
+  color: #3A546D;
+}
+
+.info .container .row span i:hover{
+  border: 1px solid #F8F9FA;
+  padding: 20px 20px;
+  border-radius: 100%;
+  background-color: #F8F9FA;
+}
+
 .info .container .row span i {
-  border: 1px solid #FFF;
-  padding: 10px 13px;
+  border: 1px solid #F8F9FA;
+  padding: 10px 10px;
   border-radius: 100%;
 }
 
 .info .container .row span  {
-  padding: 5px 15px;
+  padding: 1px 1px;
 }
 
 .copy {
@@ -192,6 +248,14 @@ body {
   text-align: center;
   padding: 30px 0;
 }
+
+#name,
+#email,
+#number {
+  border: 1px solid #FFF;
+}
+
+
 
 @media all and (min-width:768px) {
 
@@ -212,11 +276,31 @@ body {
     cursor: pointer;
   }
 
-  [class^="col-xs"] > img {
-    width: 100%;
-    /* height: auto;
-    padding-bottom: 20px;
-    border-radius: 10px; */
+  .info a:hover {
+    color: #3A546D;
+  }
+
+  .info .container .row span i:hover{
+    border: 1px solid #F8F9FA;
+    padding: 16px 16px;
+    border-radius: 100%;
+    background-color: #F8F9FA;
+  }
+
+  .info .container .row span i {
+    border: 1px solid #F8F9FA;
+    padding: 16px 16px;
+    border-radius: 100%;
+  }
+
+  .info .container .row span  {
+    padding: 1px 1px;
+  }
+}
+
+@media all and (min-width:992px) {
+  .info .container .row span  {
+    padding: 5px 5px;
   }
 
 }
